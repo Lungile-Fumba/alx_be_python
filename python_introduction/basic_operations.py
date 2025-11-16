@@ -1,8 +1,8 @@
-principal = 1000
-rate = 0.05
-time = 3
-P = principal
-R = rate
-T = time
-I = P * R * T
-print(I)
+number1 = 10
+number2 =5
+Addition = number1 + number2
+Subtration = number1 - number2
+Multiplication = number1 * number2
+print(Addition)
+print(Subtration)
+print(Multiplication)
