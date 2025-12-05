@@ -1,4 +1,4 @@
-y = range(1, 10)
+y = range(1, 10 + 1)
 
 number = int(input("Enter a number to see its multiplication table: "))
 
