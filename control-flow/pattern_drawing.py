@@ -4,8 +4,11 @@ i = 1
 
 while i <= pattern:
 
-
-    print("*" * pattern , end="" )
+    x = 1
+    while x <= pattern:
+        
+        print("*" , end="" )
+        x += 1
     
     print()
     i += 1
