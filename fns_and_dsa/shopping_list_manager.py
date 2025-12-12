@@ -4,7 +4,8 @@ shopping_list = []
 print("Welcome to the Shopping List Manager!")
 
 while True:
-        
+
+    
         print("Shopping List Menu")
         print("1. Add an item")
         print("2. Remove an item")
@@ -45,10 +46,10 @@ while True:
             print(f"\nTotal items: {len(shopping_list)}")
     
         elif choice == "4":
-            print("Thank you for using the Shopping List Manager. Goodbye! 👋")
+            print("Thank you for using the Shopping List Manager. Goodbye!")
             break
         else:
             print("Invalid choice! Please enter a number between 1 and 4.")
-
+shopping_list()
     
 
