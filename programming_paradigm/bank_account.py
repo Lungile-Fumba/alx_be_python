@@ -4,11 +4,11 @@ class BankAccount:
            raise ValueError("Initial balance cannot be negative!")
         self.account_balance = float(initial_balance)
     
-    def deposit(self, ammount ):
+    def deposit(self,ammount):
         self.account_balance += ammount 
         print( f"Deposited: {ammount}")
         
-    def withdraw(self, ammount ):
+    def withdraw(self,ammount):
         self.account_balance -= ammount
         if self.account_balance < 0: 
             return print("Insufficient Funds") 
