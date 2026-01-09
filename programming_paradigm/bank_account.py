@@ -5,8 +5,13 @@ class BankAccount:
         self.account_balance = float(initial_balance)
     
     def deposit(self, amount):
-        self.account_balance += amount 
-        print( f"Deposited: ${amount}")
+        """Deposit the specified amount."""
+        if amount <= 0:
+            print("Deposit amount must be positive!")
+            return
+        self.account_balance += amount
+        print(f"Deposited: ${amount:.2f}")
+
         
     def withdraw(self, amount):
         self.account_balance -= amount
