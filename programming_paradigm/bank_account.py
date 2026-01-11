@@ -10,7 +10,7 @@ class BankAccount:
             print("Deposit amount must be positive!")
             return
         self.account_balance += amount
-        print(f"Deposited: ${amount:.2f}")
+        print(f"Deposited: ${amount:.1f}")
 
 
     def withdraw(self, amount):
@@ -24,12 +24,15 @@ class BankAccount:
             return False
         
         self.account_balance -= amount
-        print(f"Withdrew: ${amount:.2f}")
+        print(f"Withdrew: ${amount:.1f}")
         return True
 
 
-
-
     def display_balance(self):
-        print (f"Current Balance: ${self.account_balance:.2f}")
+        print (f"Current Balance: ${self.account_balance:1f}")
+
+
+d = BankAccount(100)
+
+d.deposit(50)
 
