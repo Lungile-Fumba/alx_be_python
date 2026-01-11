@@ -24,9 +24,6 @@ def main():
     else:
         print("Invalid command.")
 
-g = BankAccount(10)
- 
-g.display_balance()
 
 if __name__ == "__main__":
     main()
