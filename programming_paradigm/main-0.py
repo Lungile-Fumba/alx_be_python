@@ -24,12 +24,6 @@ def main():
     else:
         print("Invalid command.")
 
-d = BankAccount(100)
-
-d.deposit(50)
-d.withdraw(20)
-d.withdraw(150)
-d.display_balance()
 
 if __name__ == "__main__":
     main()
