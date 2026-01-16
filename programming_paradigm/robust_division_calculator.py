@@ -5,14 +5,13 @@ def safe_divide(numerator, denominator):
         x = float(numerator)
         y = float(denominator)
         results = x / y
-        print(f"The result of the division is{results:.1f}")
-
+        return f"The result of the division is{results:.1f}"
     
     except ValueError:  
-        print("Error: Please enter numeric values only.")
+        return "Error: Please enter numeric values only."
 
     
     except ZeroDivisionError:
-        print("Error: Cannot divide by zero.")
+        return "Error: Cannot divide by zero."
         
 
