@@ -29,3 +29,6 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(6, -3), -2)
         self.assertEqual(self.calc.divide(-6, -3), 2)
         self.assertIsNone(self.calc.divide(6, 0))  
+
+if __name__ == '__main__':
+    unittest.main()
