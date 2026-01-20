@@ -1,12 +1,11 @@
-
-class Book():
+class Book:
     
     def __init__(self, title, author):
         self.title = title
         self.author = author
 
 
-class Library():
+class Library:
     
     def __init__(self):
         self.books = []
@@ -32,4 +31,3 @@ class Library():
     def list_available_books(self):
         for book in self.books:
             print(f"{book.title} by {book.author}")
-            
