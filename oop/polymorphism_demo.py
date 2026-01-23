@@ -5,10 +5,7 @@ class Shape:
         self.name = name
     
     def area(self):
-        """
-        Calculate the area of the shape.
-        This method MUST be overridden in child classes.
-        """
+      
         raise NotImplementedError("Subclasses must implement the area() method")
     
     def __str__(self):
@@ -21,7 +18,7 @@ class Rectangle(Shape):
         self.length = length
         self.width = width
     
-    # Override the area() method
+    
     def area(self):
         return self.length * self.width
     
@@ -34,9 +31,10 @@ class Circle(Shape):
         super().__init__("Circle")
         self.radius = radius
     
-    # Override the area() method
+ 
     def area(self):
-        return 3.14159 * self.radius ** 2
+    
+        return math.pi * self.radius ** 2
     
     def circumference(self):
         return 2 * 3.14159 * self.radius
